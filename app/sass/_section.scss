@@ -1,0 +1,70 @@
+@mixin border-radius() {
+    border-radius: 0px 0px 12px 12px;
+}
+
+.section--services{
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
+    padding: 0 0 60px 0;
+    position: relative;
+}
+
+.section--services::before{
+    content: '';
+    height: 10px;
+    background: #CACADB;
+    @include border-radius();
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    right: 20px;
+}
+
+.section--logo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section--services::after{
+    content: '';
+    height: 10px;
+    background: #E7E7F2;
+    @include border-radius();
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    right: 40px;
+}
+
+@media (min-width: 768px){
+    .section--services{
+       /* padding: 60px 0;*/
+       padding-bottom: 60px;
+    }
+    .section--man{
+        padding-top: 80px;
+    }
+}
+
+@media (min-width: 1920px){
+    .section--logo{
+        width: 1720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.section--man{
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.section--news{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #F5F5FA;
+}
+
+.section--footer{
+    padding-top: 0;
+}

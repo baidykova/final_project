@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    min-width: 375px;
+    overflow: auto;
+}
+
+.wrapper{
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form{
+    width: 375px ;
+    background: #F5F5FA;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.exit{
+    background: transparent;
+    border: 0;
+    display: flex;
+    align-self: flex-start;
+}
+
+::placeholder{
+    color: #B3B3BA;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.language{
+    display: none;
+}
+
+.language:checked + label{
+    background: #F0145A;
+}
+
+@media (min-width: 376px){
+    .layer{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        background: #323264;
+        opacity: 0.7;
+    }
+}
+
+@media (max-width: 767.50px){
+    .layer-main{
+        background-color: rgba(50, 50,100, 0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
+        z-index: 1;
+    }
+    
+    .form-popup{
+        background-color: #ffff;
+        border-radius: 12px 12px 0 0;
+        position: absolute;
+        top: 74%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 64px 12px 12px 12px;
+        width: 95.73%;
+    }
+    
+    .close-button{
+        background: transparent;
+        border: 0;
+        margin-bottom: 27px;
+        padding: 0;
+        position: absolute;
+        right: 10px;
+        top: 12px;
+    }
+    .block--popup-main{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .form-showed{
+        display: block;
+    }
+}
+
+@media (max-width: 374.50px){
+    .form-popup{
+        border-radius: 12px 12px;
+        top: 50%;
+    }
+}
+
+@media (min-width: 768px){
+    .wrapper{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .layer-main{
+        display: none;
+    }
+    .button--burger{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px){
+    .form{
+        width: 650px;
+        border-radius: 12px;
+    }
+}
+
+@media (min-width: 1920px){
+    .wrapper{
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+}

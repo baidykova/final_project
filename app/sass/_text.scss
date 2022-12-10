@@ -1,0 +1,209 @@
+@mixin font($fs, $lh, $fw) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+}
+
+.text--title{
+    @include font(30px, 37px, 700);
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px){
+    .text--title{
+        @include font(38px, 46px, 700);
+    }
+}
+
+.text--subtitle{
+    @include font(22px, 27px, 700);
+    color: #24A3FF;
+    margin-bottom: 15px;
+}
+
+.text--description{
+    @include font(16px, 26px, 400);
+    color: #FFFFFF;
+    margin: 0;;
+}
+
+.text--title-gray{
+    @include font(16px, 20px, 700);
+    color: #B3B3BA;
+    margin-bottom: 6px;
+    margin-top: 0;
+}
+
+.text--gray{
+    @include font(14px, 22px, 400);
+    color: #B3B3BA;
+    margin: 0;
+}
+
+.text--trust{
+    @include font(14px, 17px, 700);
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323264;
+    margin: 0 0 30px 0;
+}
+
+.text--subtitle-news{
+    @include font(16px, 20px, 700);
+    color: #24A3FF;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.text--date{
+    @include font(12px, 15px, 700);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #B3B3BA;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.text--news{
+    color: #000000;
+}
+
+.text--title-form{
+    margin: 0 0 30px 0;
+}
+
+.text--form{
+    @include font(14px, 17px, 700);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #B3B3BA;
+}
+
+.text--title-header{
+    @include font(38px, 46px, 700);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.text--title--stories{
+    @include font(38px, 46px, 700);
+    color: #B3B3BA;
+    display: flex;
+    align-self: flex-end;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.text--title--stories:hover{
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text--subtitle-stories{
+    @include font(30px, 37px, 700);
+    color: #FFFFFF;
+}
+
+.text--stories{
+    @include font(19px, 30px, 400);
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.text--language{
+    @include font(12px, 15px, 700);
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    width: 19px;
+}
+
+.text--number{
+    margin: 0;
+    @include font(16px, 20px, 700);
+    color: #FFFFFF;
+    text-decoration: none
+}
+
+.text--adress{
+    @include font(16px, 20px, 400);
+    color: #B3B3BA;
+    margin: 0;
+    text-decoration: none;
+}
+
+.text--adress-footer{
+    @include font(16px, 20px, 400);
+    color: #323264;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.text--map-footer{
+    @include font(12px, 15px, 700);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+    text-decoration: none;
+    margin-bottom: 21px;
+}
+
+.text--number-footer{
+    color: #46466E;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.text--email-footer{
+    @include font(16px, 20px, 700);
+    color: #24A3FF;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.text--email-footer:hover{
+    color: #F0145A;
+}
+
+.text--information-footer{
+    @include font(16px, 20px, 400);
+    color: #B3B3BA;
+    text-decoration: none;
+    margin: 0;
+    white-space: nowrap;
+}
+
+@media (max-width: 767.50px){
+    .text--adress{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+
+    .text--email-footer{
+        margin: 0px;
+    }
+    .text--number-footer{
+        margin: 0px;
+    }
+    .text--map-footer{
+        margin: 0px;
+    }
+    .text--adress-footer{
+        margin: 0px;
+    }
+    .text--information-footer{
+        margin-left: -25px;
+    }
+}

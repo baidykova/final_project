@@ -1,0 +1,86 @@
+.image{
+    display: flex;
+    align-self: center;
+}
+
+.image--man{
+    width: 100%;
+    object-fit:cover;
+    border-radius: 12px 12px 0px 0px;
+    height: 500px;
+}
+
+.image--news{
+    width: 100%;
+}
+
+.image--hlegal{
+    width: 69.33px;
+    height: 24.80px;
+    margin-bottom: 3.47px;
+}
+
+.image--lawcompany{
+    width: 69.33px;
+    height: 3.81px;
+}
+
+.image--facebook-footer{
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-image: url(../image/facebook-blue.svg);
+    background-size: 38px 38px;
+}
+
+.image--facebook-footer:hover{
+    background-image: url(../image/red-facebook.svg);
+}
+
+.image--arrow{
+    content: "";
+    width: 4.50px;
+    height: 9px;
+    background-image: url(../image/arrow.png);
+    background-size: 4.50px 9px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.image--arrow:hover{
+    background-image: url(../image/red-arrow.svg);
+}
+
+@media (min-width: 768px){
+    .image--hlegal{
+        width: 130px;
+        height: 46.50px;
+        margin-bottom: 6.5px;
+    }
+    
+    .image--lawcompany{
+        width: 130px;
+        height: 7.15px;
+    }
+}
+
+@media (min-width: 1024px){
+    .image--man{
+        height: 536px;
+        border-radius: 12px 0px 0px 12px;
+    }
+}
+
+@media (min-width: 1440px){
+    .image--man{       
+        height: 352px;
+    }
+}
+
+@media (min-width: 1920px){
+    .image--man{    
+        height: 305px;
+        width: 400px;
+    }
+}

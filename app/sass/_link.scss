@@ -1,0 +1,123 @@
+.link--sevices{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+}
+
+.link--sevices:hover{
+    color: #F0145A;
+}
+
+.link--hillel{
+    background: #1C4280;
+}
+
+.link--wannabiz{
+    background: #143646;
+}
+
+.link--tapgerine{
+    background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+}
+
+.link--3Dlook{
+    background: #9E4DC3;
+}
+
+.link--orangear{
+    background: #FD9339;
+}
+
+.link--adtelligent{
+    background: #E2E2E4;
+}
+
+.link--clickky{
+    background: #C71C36;
+}
+
+.link--ecoleasing{
+    background: #DCF3F9;
+}
+
+.link--infotek{
+    background: #EAEAEA;
+}
+
+.link--sitypark{
+    background: #282240;
+}
+
+.link--artprint{
+    background: #1D4568;
+}
+
+.link--ultimatecard{
+    background: #000000;
+}
+
+.link--logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.link--popup{
+    text-decoration: none;
+    color: #24A3FF;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    background: #F5F5FA;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    padding: 7px 0;
+    width: 100%;
+}
+
+.link--popup:hover{
+    color: #F0145A;
+}
+
+@media (max-width: 767.50px){
+    .link--logo:nth-child(n+7){
+        display: none;
+    }
+    .link--header{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .link--logo{
+        width: 33.33%;
+    }
+    .link--header{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        text-decoration: none;
+        margin-right: 15px;
+    }
+    .link--header:last-child{
+        margin-right: 0;
+    }
+    .link--header:hover{
+        text-decoration: underline;
+        color: #F0145A;
+    }
+}
+
+@media (min-width: 1024px){
+    .link--logo{
+        width: 25%;
+    }
+}
